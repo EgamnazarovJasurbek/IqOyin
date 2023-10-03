@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iq O'yin</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="header__nav">
+            <div class="container-fluid px-0">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="">FAQs</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="">Контакты</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="rezultat.html">Результаты</a>
+                        </li>
+                    </ul>
+                    <div class="nav__logs">
+                        <a href="" class="nav__logs-lang"><img src="/Image/translate.png" alt=""></a>
+                        <a href="" class="nav__logs-login" id="showLogin">Вход</a>
+                        <a href="" class="nav__logs-regstr">
+                            <button class="btn" id="showRegistrationBtn">Регистрация</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Login Form Start -->
+                <div class="registr__content login" id="loginForm">
+                    <div class="registr_content-top">
+                        <h4>Войти</h4>
+                        <a href="">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+                    <form action="registrComplete.html" method="">
+                        <label for="Phone" class="form-label">Telefon nomer</label>
+                        <input type="tel" id="Phone" class="form-control" name="phone" required>
+                        <label for="Password">Parol</label>
+                        <div class="password-input-container">
+                            <input type="password" id="Password" class="form-control" name="password" required>
+                            <i id="ShowPasswordIcon3" class="fa-solid fa-eye"></i>
+                        </div>
+
+                        <div class="privacy_policy">
+                            <input type="radio" id="check" name="privacy" value="check" required>
+                            <span>By creating an account, I agree to our <b>Terms of use </b> <br>
+                                <b class="ms-3"> and Privacy Policy</b> </span>
+                        </div>
+                        <button class="btn btn-create" type="submit">Kirish</button>
+                    </form>
+                </div>
+                <!-- Login Form End -->
+
+
+                <!-- Register Start-->
+                <div class="registr__content" id="registrationForm">
+                    <div class="registr_content-top">
+                        <h4>Создать аккаунт</h4>
+                        <a href="">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+                    <form action="" method="">
+                        <label for="Name" class="form-label">Ismingiz</label>
+                        <input type="text" id="Name" class="form-control" name="name" required>
+                        <label for="Surname" class="form-label">Familiya</label>
+                        <input type="text" id="Surname" class="form-control" name="surname" required>
+                        <label for="Password">Parol:</label>
+                        <div class="password-input-container">
+                            <input type="password" id="Password" class="form-control" name="password" required>
+                            <i id="ShowPasswordIcon1" class="fa-solid fa-eye"></i>
+                        </div>
+                        <label for="reset_password">Qayta parol:</label>
+                        <div class="password-input-container">
+                            <input type="password" id="reset_password" class="form-control" name="reset_password"
+                                required>
+                            <i id="ShowPasswordIcon2" class="fa-solid fa-eye"></i>
+                        </div>
+                        <label for="Email" class="form-label">Pochta</label>
+                        <input type="email" id="Email" class="form-control" name="email" required>
+                        <div class="form-group mt-2">
+                            <label>Talim muasassasi</label>
+                            <select name="talim" id="" class="form-control" required>
+                                <option value="Kollej">Kollej</option>
+                                <option value="Maktab">Maktab</option>
+                            </select>
+                        </div>
+                        <div class="privacy_policy">
+                            <input type="radio" id="check" name="privacy" value="check" required>
+                            <span>By creating an account, I agree to our <b>Terms of use </b> <br>
+                                <b class="ms-3"> and Privacy Policy</b> </span>
+                        </div>
+                        <button class="btn btn-create" type="submit" id="emailSendBtn">Create an Acount</button>
+                    </form>
+                </div>
+                <!-- Register End-->
+
+
+                <!-- Email kod yuborish Start  -->
+                <div class="registr__content email_send_code" id="emailSendCode">
+                    <div class="registr_content-top">
+                        <h4>Код подтверждения </h4>
+                        <a href="">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+                    <form action="registrComplete.html" method="">
+                        <label for="EmailCode" class="form-label">Kod kiriting</label>
+                        <input type="number" id="EmailCode" class="form-control" name="emailCode" required>
+                        <button class="btn btn-create mt-5" type="submit">Create an Acount</button>
+                    </form>
+                </div>
+                <!-- Email kod yuborish End  -->
+
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="background_index" style="background-image: url('/Image/Background.png');"></div>
+
+    <!-- Main Title Start-->
+    <div class="main__title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Ro'yxatdan o'ting</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 ">
+                    <p>Most calendars are designed for teams. Slate is designed for <br>
+                        freelancers who want a simple way to plan their schedule.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Title End-->
+
+
+    <!-- Main Section Start -->
+
+    <main>
+        <!-- Subjects Start -->
+        <section>
+            <div class="subjects">
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Subjects End -->
+
+
+        <!-- Macbook Img Start -->
+        <section>
+            <div class="macbook">
+                <div class="container">
+                    <img src="/Image/Macbook.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Macbook Img END -->
+
+        <!-- FAQS Start -->
+        <section class="FAQS">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>FAQ</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-md-12">
+                        <h3>We focus on ergonomics and meeting you ?</h3>
+                        <h3>We focus on ergonomics ?</h3>
+                        <h3>A rethink of how we work ?</h3>
+                        <h3>With a focus on speed ergonomics and fun. ?</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h3>We focus on ergonomics and meeting you ?</h3>
+                        <h3>We focus on ergonomics ?</h3>
+                        <h3>A rethink of how we work ?</h3>
+                        <h3>With a focus on speed ergonomics and fun. ?</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQS End -->
+    </main>
+    <!-- Main Section End -->
+
+
+    <!-- Footer Start  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__en">
+                <div class="footer__mail">
+                    <a href="">
+                        <i class="fa-regular fa-envelope me-2"></i>
+                        info@TeamWork.com
+                    </a>
+                </div>
+                <div class="footer__tel">
+                    <a href="tel:+99890-123-45-67">
+                        <i class="fa-solid fa-phone me-2"></i>
+                        901234567
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End  -->
+
+
+
+
+    <!-- Js Script  -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Passwords Show or close
+        const passwordInput = document.getElementById('Password');
+        const resetPasswordInput = document.getElementById('reset_password');
+        const showPasswordIcon1 = document.getElementById('ShowPasswordIcon1');
+        const showPasswordIcon2 = document.getElementById('ShowPasswordIcon2');
+
+        showPasswordIcon1.addEventListener('click', () => {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                showPasswordIcon1.classList.remove('fa-eye');
+                showPasswordIcon1.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                showPasswordIcon1.classList.remove('fa-eye-slash');
+                showPasswordIcon1.classList.add('fa-eye');
+            }
+        });
+
+        showPasswordIcon2.addEventListener('click', () => {
+            if (resetPasswordInput.type === 'password') {
+                resetPasswordInput.type = 'text';
+                showPasswordIcon2.classList.remove('fa-eye');
+                showPasswordIcon2.classList.add('fa-eye-slash');
+            } else {
+                resetPasswordInput.type = 'password';
+                showPasswordIcon2.classList.remove('fa-eye-slash');
+                showPasswordIcon2.classList.add('fa-eye');
+            }
+        });
+
+
+        // Passwords Show or close
+
+
+        // Registr va Login Click bolganda forma chiqadi showLogin
+        const showRegistrationButton = document.getElementById('showRegistrationBtn');
+        const showLogin = document.getElementById('showLogin');
+        const registrationForm = document.getElementById('registrationForm');
+        const loginForm = document.getElementById('loginForm');
+        const emailSendBtn = document.getElementById('emailSendBtn');
+        const emailSendCode = document.getElementById('emailSendCode');
+
+
+        showRegistrationButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            registrationForm.classList.add('active');
+        });
+        showLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginForm.classList.add('active');
+        });
+        emailSendBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            emailSendCode.classList.add('active');
+            registrationForm.classList.remove('active');
+        })
+        // Registr va Login Click bolganda forma chiqadi
+
+
+
+    </script>
+</body>
+
+</html>

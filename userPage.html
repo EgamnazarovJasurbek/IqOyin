@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="header__nav">
+            <div class="container-fluid px-0">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="">FAQs</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="">Контакты</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="rezultat.html">Результаты</a>
+                        </li>
+                    </ul>
+                    <div class="nav__logs">
+                        <a href="" class="nav__logs-lang"><img src="/Image/translate.png" alt=""></a>
+                        <a href="" class="nav__keys">
+                            <img src="/Image/key 1 (Traced).png" alt="">
+                            1
+                        </a>
+                        <a href="" class="nav__user">
+                            <p>Muhamamd</p>
+                            <img src="/Image/User-photo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="backgroundTestBlog" style="background-image: url('/Image/Background.png'); top: -50%; height: 900px;">
+    </div>
+
+
+
+
+    <!-- Main Section Start -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="user">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="user__img">
+                                <img src="/Image/Big User photo.png" alt="" height="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="user_info">
+                                <div class="div">
+                                    <label for="">Ism</label>
+                                    <h2>Muhammad Hudayberdiyev</h2>
+                                </div>
+                                <div class="div">
+                                    <label for="">Status</label>
+                                    <h2>Школьник</h2>
+                                </div>
+                                <div class="div">
+                                    <label for="">Номер телефона</label>
+                                    <h2>+ 998 (33) 408-28-08</h2>
+                                </div>
+                                <a href=""><button id="showEdit" class="btn btn-primary">Tahrirlash </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- edit Profile Start -->
+                <div class="edit_profile">
+                    <div class="edit_profile-top mb-5">
+                        <h4>Tahrirlash</h4>
+                        <a href="">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+                    <form action="">
+                        <label for="img">Rasm yukla</label> <br> <br>
+                        <input type="file" name="image" placeholder="fayl biriktirish"> <br> <br>
+                        <!--  -->
+                        <label for="Name" class="form-label">Ismingiz</label>
+                        <input type="text" id="Name" class="form-control" name="name" required>
+                        <!--  -->
+                        <label for="Surname" class="form-label">Familiya</label>
+                        <input type="text" id="Surname" class="form-control" name="surname" required>
+                        <!--  -->
+                        <label for="Phone" class="form-label">Telefon nomer</label>
+                        <input type="tel" id="Phone" class="form-control" name="phone" required>
+                        <!--  -->
+                        <label for="Password">Parol:</label>
+                        <div class="password-input-container">
+                            <input type="password" id="Password" class="form-control" name="password" required>
+                            <i id="ShowPasswordIcon1" class="fa-solid fa-eye"></i>
+                        </div>
+                        <label for="reset_password">Qayta parol:</label>
+                        <div class="password-input-container">
+                            <input type="password" id="reset_password" class="form-control" name="reset_password"
+                                required>
+                            <i id="ShowPasswordIcon2" class="fa-solid fa-eye"></i>
+                        </div>
+                        <button class="btn btn-create mt-4" type="submit">Saqlash</button>
+                    </form>
+                </div>
+                <!-- edit Profile End-->
+            </div>
+        </section>
+    </main>
+    <!-- Main Section End -->
+
+
+    <!-- Footer Start  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__en">
+                <div class="footer__mail">
+                    <a href="">
+                        <i class="fa-regular fa-envelope me-2"></i>
+                        info@TeamWork.com
+                    </a>
+                </div>
+                <div class="footer__tel">
+                    <a href="tel:+99890-123-45-67">
+                        <i class="fa-solid fa-phone me-2"></i>
+                        901234567
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End  -->
+
+    <!-- Js Script  -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        const showEdit = document.getElementById('showEdit');
+        const editForm = document.querySelector('.edit_profile');
+
+        showEdit.addEventListener('click', (e) => {
+            e.preventDefault();
+            editForm.classList.add('active');
+        });
+    
+    </script>
+
+</body>
+
+</html>
