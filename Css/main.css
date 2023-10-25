@@ -533,3 +533,14 @@ tbody{
 }
 
 /* Footer End */
+
+
+/* Slider */
+.slider{
+    column-gap: 30px;
+}
+.slider_content{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}

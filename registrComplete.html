@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Main Css -->
     <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="Css/main.css">
 </head>
 
@@ -37,7 +39,7 @@
                         <a href="" class="nav__logs-lang"><img src="/Image/translate.png" alt=""></a>
                         <a href="" class="nav__logs-login">Вход</a>
                         <a href="" class="nav__logs-regstr">
-                            <button class="btn" >Регистрация</button>
+                            <button class="btn">Регистрация</button>
                         </a>
                     </div>
                 </div>
@@ -75,29 +77,67 @@
             <div class="subjects">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <a href="Test-blog.html">
-                                <div class="subject__box">
-                                    <h2>Математика</h2>
-                                    <p>5 уровней</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <a href="Test-blog.html">
-                                <div class="subject__box">
-                                    <h2>Геометрия</h2>
-                                    <p>5 уровней</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <a href="Test-blog.html">
-                                <div class="subject__box">
-                                    <h2>Биология</h2>
-                                    <p>5 уровней</p>
-                                </div>
-                            </a>
+                        <div class="slider">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <a href="Test-blog.html">
+                                    <div class="slider_content">
+                                        <div class="subject__box">
+                                            <h2>Математика</h2>
+                                            <p>5 уровней</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <a href="Test-blog.html">
+                                    <div class="slider_content">
+                                        <div class="subject__box">
+                                            <h2>Математика111</h2>
+                                            <p>5 уровней</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <a href="Test-blog.html">
+                                    <div class="slider_content">
+                                        <div class="subject__box">
+                                            <h2>Математика222</h2>
+                                            <p>5 уровней</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <a href="Test-blog.html">
+                                    <div class="slider_content">
+                                        <div class="subject__box">
+                                            <h2>Математика222</h2>
+                                            <p>5 уровней</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <a href="Test-blog.html">
+                                    <div class="slider_content">
+                                        <div class="subject__box">
+                                            <h2>Математика222</h2>
+                                            <p>5 уровней</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <a href="Test-blog.html">
+                                    <div class="slider_content">
+                                        <div class="subject__box">
+                                            <h2>Математика222</h2>
+                                            <p>5 уровней</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>    
                         </div>
                     </div>
                 </div>
@@ -177,9 +217,20 @@
 
     <!-- Js Script  -->
     <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/main.js"></script>
 
     <script>
+       $(document).ready(function() {
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                dots: true,
+                autoplay: true
+            });
+        });
         // Passwords Show or close
         const passwordInput = document.getElementById('Password');
         const resetPasswordInput = document.getElementById('reset_password');
